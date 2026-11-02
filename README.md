@@ -22,9 +22,12 @@ openExpress:
 
 ```sh
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak remote-add --user --if-not-exists openexpress https://flatpak.bojanowski.me/openexpress.flatpakrepo
-flatpak install --user openexpress io.github.tomaszbojanowski.OpenExpress
+flatpak remote-add --user --if-not-exists bojanowski https://flatpak.bojanowski.me/bojanowski.flatpakrepo
+flatpak install --user bojanowski io.github.tomaszbojanowski.OpenExpress
 ```
+
+`openexpress.flatpakrepo` stays for installations that added the repository
+under the name `openexpress`: it is the same repository.
 
 Updates arrive through a regular `flatpak update`. The GNOME runtime comes
 from Flathub.
