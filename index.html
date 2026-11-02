@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bojanowski.me apps</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fafafb;
+    --fg: #2e2e32;
+    --dim: #5e5e66;
+    --card: #ffffff;
+    --border: #dcdce0;
+    --accent: #1c71d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #222226;
+      --fg: #f2f2f4;
+      --dim: #b8b8c0;
+      --card: #2e2e32;
+      --border: #44444a;
+      --accent: #78aeed;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.55 system-ui, "Cantarell", sans-serif;
+  }
+  main {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 3rem 1rem 4rem;
+  }
+  h1 { font-size: 1.8rem; margin: 0 0 0.3rem; }
+  .lead { color: var(--dim); margin: 0 0 2.2rem; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.3rem 1.3rem 0.4rem;
+    margin-bottom: 1.4rem;
+  }
+  .app { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.8rem; }
+  .app img { width: 64px; height: 64px; }
+  h2 { font-size: 1.25rem; margin: 0; }
+  .app p { margin: 0.1rem 0 0; color: var(--dim); }
+  pre {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    overflow-x: auto;
+    font-size: 0.9rem;
+  }
+  code { font-family: ui-monospace, "Source Code Pro", monospace; }
+  a { color: var(--accent); }
+  .dim { color: var(--dim); font-size: 0.92rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>bojanowski.me apps</h1>
+  <p class="lead">A Flatpak repository with apps by Tomasz Bojanowski. Updates arrive with a regular <code>flatpak update</code>; the GNOME runtime comes from Flathub.</p>
+
+  <section>
+    <div class="app">
+      <img src="vumi.png" alt="">
+      <div>
+        <h2>Vumi</h2>
+        <p>A GNOME music player for your own Navidrome or Subsonic server.</p>
+      </div>
+    </div>
+    <pre><code>flatpak install --user https://flatpak.bojanowski.me/io.github.tomaszbojanowski.Vumi.flatpakref</code></pre>
+    <p>Source code and issues: <a href="https://github.com/TomaszBojanowski/vumi">github.com/TomaszBojanowski/vumi</a></p>
+  </section>
+
+  <section>
+    <div class="app">
+      <img src="openexpress.svg" alt="">
+      <div>
+        <h2>openExpress</h2>
+        <p>Manage your Garmin watch on Linux: an unofficial Garmin Express client.</p>
+      </div>
+    </div>
+    <pre><code>flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --user --if-not-exists openexpress https://flatpak.bojanowski.me/openexpress.flatpakrepo
+flatpak install --user openexpress io.github.tomaszbojanowski.OpenExpress</code></pre>
+    <p>Source code and issues: <a href="https://github.com/TomaszBojanowski/openExpress">github.com/TomaszBojanowski/openExpress</a></p>
+  </section>
+
+  <h2 style="font-size: 1.1rem; margin-top: 2rem;">The whole repository</h2>
+  <pre><code>flatpak remote-add --user --if-not-exists bojanowski https://flatpak.bojanowski.me/bojanowski.flatpakrepo</code></pre>
+  <p class="dim">Signed with the key <code>2EEA A178 A4C8 C394 74DA 5D97 5A17 0A42 2BEA C494</code> (bojanowski.me Flatpak Repository), also available as <a href="bojanowski.gpg">bojanowski.gpg</a>.</p>
+</main>
+</body>
+</html>

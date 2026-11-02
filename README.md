@@ -1,18 +1,34 @@
-# openExpress Flatpak repository
+# bojanowski.me Flatpak repository
 
-This repository hosts the Flatpak repository for
-[openExpress](https://github.com/TomaszBojanowski/openExpress), an unofficial
-Garmin Express client for Linux. It is published via GitHub Pages at
-<https://flatpak.bojanowski.me/>.
+This repository hosts the Flatpak repository for apps by Tomasz Bojanowski,
+published with GitHub Pages at <https://flatpak.bojanowski.me/>:
 
-For source code, issues and documentation, see the
-[main repository](https://github.com/TomaszBojanowski/openExpress).
+- [Vumi](https://github.com/TomaszBojanowski/vumi), a GNOME music player for
+  your own Navidrome or Subsonic server;
+- [openExpress](https://github.com/TomaszBojanowski/openExpress), an unofficial
+  Garmin Express client for Linux.
+
+For source code, issues and documentation, see the repositories of the apps.
 
 ## Installation
 
+Vumi:
+
 ```sh
-flatpak remote-add --user --if-not-exists openexpress https://flatpak.bojanowski.me/openexpress.flatpakrepo
-flatpak install openexpress io.github.tomaszbojanowski.OpenExpress
+flatpak install --user https://flatpak.bojanowski.me/io.github.tomaszbojanowski.Vumi.flatpakref
 ```
 
-Updates arrive through a regular `flatpak update`.
+openExpress:
+
+```sh
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --user --if-not-exists openexpress https://flatpak.bojanowski.me/openexpress.flatpakrepo
+flatpak install --user openexpress io.github.tomaszbojanowski.OpenExpress
+```
+
+Updates arrive through a regular `flatpak update`. The GNOME runtime comes
+from Flathub.
+
+The repository is signed with the key
+`2EEA A178 A4C8 C394 74DA 5D97 5A17 0A42 2BEA C494`, also in `bojanowski.gpg`
+(and `openexpress.gpg`, the same key).
