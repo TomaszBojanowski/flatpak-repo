@@ -6,7 +6,9 @@ published with GitHub Pages at <https://flatpak.bojanowski.me/>:
 - [Vumi](https://github.com/TomaszBojanowski/vumi), a GNOME music player for
   your own Navidrome or Subsonic server;
 - [openExpress](https://github.com/TomaszBojanowski/openExpress), an unofficial
-  Garmin Express client for Linux.
+  Garmin Express client for Linux;
+- [Baseboard](https://github.com/TomaszBojanowski/baseboard), a native GNOME
+  app for the sensors and fans of motherboards on Linux.
 
 For source code, issues and documentation, see the repositories of the apps.
 
@@ -24,6 +26,12 @@ openExpress:
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak remote-add --user --if-not-exists bojanowski https://flatpak.bojanowski.me/bojanowski.flatpakrepo
 flatpak install --user bojanowski io.github.tomaszbojanowski.OpenExpress
+```
+
+Baseboard:
+
+```sh
+flatpak install --user https://flatpak.bojanowski.me/me.bojanowski.Baseboard.flatpakref
 ```
 
 `openexpress.flatpakrepo` stays for installations that added the repository

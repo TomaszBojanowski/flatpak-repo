@@ -1,7 +1,7 @@
 [Flatpak Repo]
 Title=bojanowski.me apps
-Comment=Vumi and openExpress
-Description=Flatpak repository for Vumi, a music player for Navidrome, and openExpress, an unofficial Garmin Express client for Linux.
+Comment=Apps by Tomasz Bojanowski
+Description=Flatpak repository for apps by Tomasz Bojanowski.
 Url=https://flatpak.bojanowski.me/repo/
 Homepage=https://flatpak.bojanowski.me/
 RuntimeRepo=https://dl.flathub.org/repo/flathub.flatpakrepo
