@@ -5,6 +5,6 @@ indexed-deltas=true
 
 [flatpak]
 title=bojanowski.me apps
-comment=Apps by Tomasz Bojanowski
+comment=Vumi and openExpress
 homepage=https://flatpak.bojanowski.me
-description=Flatpak repository for apps by Tomasz Bojanowski.
+description=Flatpak repository for Vumi, a music player for Navidrome, and openExpress, an unofficial Garmin Express client for Linux.
