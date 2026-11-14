@@ -59,6 +59,14 @@
   code { font-family: ui-monospace, "Source Code Pro", monospace; }
   a { color: var(--accent); }
   .dim { color: var(--dim); font-size: 0.92rem; }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    color: var(--dim);
+    font-size: 0.82rem;
+  }
+  footer p { margin: 0; }
 </style>
 </head>
 <body>
@@ -108,6 +116,10 @@ flatpak install --user bojanowski io.github.tomaszbojanowski.OpenExpress</code><
   <h2 style="font-size: 1.1rem; margin-top: 2rem;">The whole repository</h2>
   <pre><code>flatpak remote-add --user --if-not-exists bojanowski https://flatpak.bojanowski.me/bojanowski.flatpakrepo</code></pre>
   <p class="dim">Signed with the key <code>2EEA A178 A4C8 C394 74DA 5D97 5A17 0A42 2BEA C494</code> (bojanowski.me Flatpak Repository), also available as <a href="bojanowski.gpg">bojanowski.gpg</a>.</p>
+
+  <footer>
+    <p>MSI and MSI product names are trademarks of Micro-Star International Co., Ltd. Baseboard is an independent project and is not affiliated with or endorsed by MSI.</p>
+  </footer>
 </main>
 </body>
 </html>

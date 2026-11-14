@@ -2,7 +2,7 @@
 Name=me.bojanowski.Baseboard
 Branch=master
 Title=Baseboard
-Comment=Monitor your motherboard sensors
+Comment=MSI motherboard sensors and fans
 Url=https://flatpak.bojanowski.me/repo/
 SuggestRemoteName=bojanowski
 Homepage=https://baseboard.bojanowski.me

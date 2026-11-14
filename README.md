@@ -43,3 +43,9 @@ from Flathub.
 The repository is signed with the key
 `2EEA A178 A4C8 C394 74DA 5D97 5A17 0A42 2BEA C494`, also in `bojanowski.gpg`
 (and `openexpress.gpg`, the same key).
+
+## Trademarks
+
+MSI and MSI product names are trademarks of Micro-Star International Co.,
+Ltd. Baseboard is an independent project and is not affiliated with or
+endorsed by MSI.
