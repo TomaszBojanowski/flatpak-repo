@@ -8,7 +8,7 @@ published with GitHub Pages at <https://flatpak.bojanowski.me/>:
 - [openExpress](https://github.com/TomaszBojanowski/openExpress), an unofficial
   Garmin Express client for Linux;
 - [Baseboard](https://github.com/TomaszBojanowski/baseboard), a native GNOME
-  app for the sensors and fans of motherboards on Linux.
+  app for the sensors and fans of MSI motherboards on Linux.
 
 For source code, issues and documentation, see the repositories of the apps.
 
